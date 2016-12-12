@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        Love From Me
+    </title>
+</head>
+<body>
+  <h1>Send a card to someone you love. </h1>  
+  <h2> Please fill in the boxes, and you'll be able to preview your card</h2>
+  <form action="/process_card" method="POST">
+    <div class="newcard">
+        <label>Sender Name</label>
+    </div>
+    <div> 
+        <input class="form-control" name="sender_name" required >
+    </div>
+    
+    <label>Sender Phone Number (10 digits)</label>
+    
+    <div> 
+        <input class="form-control" name="sender_phone" required >
+    </div>
+    <label> Recipient Name</label>
+    <div> 
+      <input class="form-control" name="recipient_name" required >
+  </div>
+  <label>Recipient Phone Number (10 digits)</label>
+  
+  <div> 
+    <input class="form-control" name="recipient_phone" required >
+</div>
+<div>
+    <label> Message: </label>
+</div>
+<div>
+    <textarea name="message"></textarea>
+</div>
+<label> Please select a card </label>
+<div>
+    <input type="radio" name="card" value="redcard"> Red Christmas Tree
+</div>
+<div>
+    <img  src="/static/christmas_tree.jpg" height="100" width="100"></img>
+</div>
+
+<div>
+    <input type="radio" name="card" value="whitecard"> White Ornaments
+</div>
+
+<div>
+    <img src="/static/whitechristmas.jpg" height="100" width="100"></img>
+</div>
+</div>
+<button id="preview" type="submit">Preview Your Card</button>
+</form>
+
+
+
+
+
+
+
+
+    </body>
+    </html>
+       
